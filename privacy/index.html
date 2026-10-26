@@ -65,7 +65,8 @@
 <p>XSwipe asks for access to your photo library so it can show you your photos and videos, calculate how much space they take, and let you decide what to keep or delete. When you choose a folder in the Files section, XSwipe reads only the folder you picked.</p>
 <ul>
   <li>All of this happens on your device. Photos, videos, files and their contents are never uploaded to us or to anyone else.</li>
-  <li>Items you delete go through the iOS system confirmation and, for photos, are moved to the Recently Deleted album, where you can restore them.</li>
+  <li>Photos and videos you delete are confirmed by iOS and moved to the Recently Deleted album, where you can restore them.</li>
+  <li>Files you delete from a folder you picked are removed permanently after you confirm in the App.</li>
   <li>Statistics about your library (for example, sizes and counts) are stored only on your device and are shared with the App’s widgets on the same device.</li>
 </ul>
 <p>You can change photo access at any time in iOS Settings → Privacy &amp; Security → Photos → XSwipe.</p>
@@ -81,13 +82,14 @@
 <p>This data does not include your name, email address, photos, file names or file contents, and is not used to identify you. We do not use the advertising identifier (IDFA).</p>
 
 <h3>Crash reports (Firebase Crashlytics)</h3>
-<p>If the App crashes or hits an error, Firebase Crashlytics sends a crash report: the technical state of the App at the moment of the crash, device model, iOS version, app version and a random installation identifier. Crash reports help us find and fix bugs.</p>
+<p>If the App crashes or hits an error, Firebase Crashlytics sends a crash report: the technical state of the App at the moment of the crash, device model, iOS version, app version and a random installation identifier. Crash reports never include your photos, videos, file names or file contents. Crash reports help us find and fix bugs.</p>
 
 <h3>Emails you send us</h3>
 <p>If you contact us through “Contact Us”, we receive your email address and whatever you write. The App pre-fills your app version, iOS version and device model in the message so we can help you faster; you can remove them before sending.</p>
 
 <h3>Purchases</h3>
-<p>XSwipe offers auto-renewable subscriptions and one-time (lifetime) purchases. All of them are processed by Apple through the App Store. We do not receive your name, payment card or billing address. Apple tells the App only which purchases or subscriptions are active, so it can unlock paid features and restore them on your other devices.</p>
+<p>XSwipe offers an auto-renewable subscription that unlocks premium features, and one-time purchases of themes that are yours to keep. All of them are made through Apple’s in-app purchase system (StoreKit) and processed by Apple. We do not receive your name, Apple ID, payment card or billing address, and we do not run our own purchase servers.</p>
+<p>Apple gives the App signed information about which subscriptions and purchases are active on your Apple ID. The App checks it on your device to unlock what you paid for, and “Restore Purchases” gets it again from Apple on a new device. Google Analytics for Firebase may record that a purchase happened, with the product, price and currency, to help us understand which offers are useful; it never receives your payment details.</p>
 <p>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel them in iOS Settings → your name → Subscriptions. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
 <h3>Notifications</h3>
@@ -96,6 +98,7 @@
 <h2>How we use information</h2>
 <ul>
   <li>To provide and keep the App working.</li>
+  <li>To unlock the subscription and the themes you bought, and restore them on your devices.</li>
   <li>To find and fix crashes and errors.</li>
   <li>To understand which features are used and improve the App.</li>
   <li>To answer your questions and support requests.</li>
